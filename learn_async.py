@@ -554,7 +554,7 @@ def sync_discuss(c):
     except:
         return
     for d in disc:
-        filename = os.path.join(pre, escape(d["bt"]) + ".txt")
+        filename = os.path.join(pre, f"{escape(d['bt'])} [{d['fbrq']}].txt")
         if os.path.exists(filename):
             continue
         try:
